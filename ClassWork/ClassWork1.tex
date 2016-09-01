@@ -1,0 +1,95 @@
+\documentclass[11pt]{article}
+\usepackage{enumitem}
+\usepackage{amsmath}
+\usepackage{graphicx}
+
+\begin{document}
+
+Wayne Green
+
+Victoria Haley
+
+Joshua Lilly
+
+Math 290 - Group Assignment I
+
+8/31/2016
+\begin{flushleft}
+
+\begin{enumerate}[widest={5.2}]
+\item[2a.] \begin{center}
+\begin{tabular}{| l | l | l | l | l | l | l | l |}
+  \hline
+  P & Q & R & (P $\vee$ R) & (P $\wedge$ Q) & (P $\wedge$ R) & (P $\wedge$ (Q $\vee$ R)) & (P $\wedge$ Q) $\vee$  (P $\wedge$ R) \\ \hline
+  F & F & F & F & F & F & F & F\\ \hline
+  F & F & T & T & F & F & F & F\\ \hline
+  F & T & F & T & F & F & F & F\\ \hline
+  F & T & T & T & F & F & F & F\\ \hline
+  T & F & F & F & F & F & F & F\\ \hline
+  T & F & T & T & F & T & T & T\\ \hline
+  T & T & F & T & T & F & T & T\\ \hline
+  T & T & T & T & T & T & T & T\\ \hline
+  \end{tabular}
+\end{center}
+
+\item[2b.]
+Not possible for this problem since the problem statement is the definition of the distributive property of and over or
+  
+\item[2c.]
+In order to show that P $\wedge$ (Q $\vee$ R) is equivalent to 
+
+(P $\wedge$ Q) $\vee$ (P $\wedge$ R) we must show two things.
+ 
+\vspace{5mm} %5mm vertical space
+(1) P $\wedge$ (Q $\vee$ R) then 
+(P $\wedge$ Q) $\vee$ (P $\wedge$ R)\\
+(2) (P $\wedge$ Q) $\vee$ (P $\wedge$ R) then P $\wedge$ (Q $\vee$ R)
+\bigskip
+
+(1) Suppose P $\wedge$ (Q $\vee$ R) is true. In this case we must also show that\\ (P $\wedge$ Q) $\vee$ (P $\wedge$ R) is true. For (P $\wedge$ Q) $\vee$ (P $\wedge$ R) to be true either (P $\wedge$ Q) must be true OR (P $\wedge$ R) must be true. Since 
+P $\wedge$ (Q $\vee$ R) is true, P must be true and either Q OR R must be true. Since P must be true and either Q OR R must be true, then it follows that at least 
+(P $\wedge$ Q) is true OR (P $\wedge$ R) is true.  
+\smallskip
+
+(2) assume (P $\wedge$ R) is true. If (P $\wedge$ R) is true then it must be the case that P AND R are both true. Since P AND R are both true, since P AND R must be true, then (Q $\vee$ R) must be true since R is true. and the statement P $\wedge$ (Q $\vee$ R) must also be true since P is also true. Therefore, P $\wedge$ (Q $\vee$ R) and (P $\wedge$ Q) $\vee$ (P $\wedge$ R) must be equivalent.
+ 
+\item[4a.] 
+ \begin{center}
+ \scalebox{0.91}{
+\begin{tabular}{| l | l | l | l | l | l | l | l |}
+  \hline
+  P & Q & R & (Q $\wedge$ R) & (P $\implies$ R) & (P $\implies$ Q) & (P $\implies$ (Q $\wedge$ R)) & (P $\implies$ Q) $\wedge$  (P $\implies$ R) \\ \hline
+  F & F & F & F & F & F & F & F\\ \hline
+  F & F & T & T & F & F & F & F\\ \hline
+  F & T & F & T & F & F & F & F\\ \hline
+  F & T & T & T & F & F & F & F\\ \hline
+  T & F & F & F & F & F & F & F\\ \hline
+  T & F & T & T & F & T & T & T\\ \hline
+  T & T & F & T & T & F & T & T\\ \hline
+  T & T & T & T & T & T & T & T\\ \hline
+  \end{tabular}
+  }
+\end{center}
+\medskip
+
+\item[4b]
+ (P $\implies$ (Q $\wedge$ R)) $\equiv$ (Implcation removal)\\$\neg$ P $\vee$ (Q $\wedge$ R) $\equiv$ (Distribute)\\ ($\neg$ P $\vee$ Q) $\wedge$ ($\neg$ P $\vee$ R) $\equiv$ (Introduce implications)\\ (P $\implies$ Q) $\wedge$ (P $\implies$ R)
+ 
+ \item[4c]
+In order to show that (P $\implies$ (Q $\wedge$ R)) is equivalent to\\ (P $\implies$ Q) $\wedge$ (P $\implies$ R) we must show two things.
+\vspace{5mm} %5mm vertical space
+
+(1) (P $\implies$ (Q $\wedge$ R)) then (P $\implies$ Q) $\wedge$ (P $\implies$ R)
+
+(2) (P $\implies$ Q) $\wedge$ (P $\implies$ R) then (P $\implies$ (Q $\wedge$ R))
+\bigskip
+
+(1) Assume (P $\implies$ (Q $\wedge$ R)) is true since the statement is true it follows that Q AND R must both be true. This says nothing about P however, since Q AND R both must be true it is not possible for either (P $\implies$ Q) OR (P $\implies$ R) to ever be false since the only way for the implication to be false is if either Q OR R is also false. Since both (P $\implies$ Q) AND (P $\implies$ R) must be true it must be true when (P $\implies$ (Q $\wedge$ R)) is true.
+\smallskip
+
+(2) Assume (P $\implies$ Q) $\wedge$ (P $\implies$ R) is true. Which means P, Q AND R can be all false, OR Q AND R can be true. When P, Q, AND R are false. (Q $\wedge$ R) is false, which means since P is false\\ (P $\implies$ (Q $\wedge$ R)) must be true. Which is consistent with\\ (P $\implies$ Q) $\wedge$ (P $\implies$ R). When Q AND R are true, it is not possible for (P $\implies$ Q) $\wedge$ (P $\implies$ R) to ever be false since the implication can only evaluate to false when either Q OR R are false. Additionally, since Q AND R are both true, (Q $\wedge$ R) must also be true, forcing (P $\implies$ (Q $\wedge$ R)) to also always be true. Therefore,\\ (P $\implies$ (Q $\wedge$ R)) must be equivalent to (P $\implies$ Q) $\wedge$ (P $\implies$ R)
+\end{enumerate}
+ 
+ 
+\end{flushleft}
+\end{document}
