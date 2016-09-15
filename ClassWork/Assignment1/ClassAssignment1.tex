@@ -1,0 +1,67 @@
+\documentclass[11pt]{article}
+\usepackage{enumitem}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage{amssymb}
+
+\begin{document}
+
+Victoria Haley
+
+Joshua Lilly
+
+Math 290 - Group Assignment II
+
+9/14/2016
+\begin{flushleft}
+
+\begin{enumerate}[widest={5.2}]
+
+\item[1ai.] Written by: Joshua Lilly \\
+Open sentences:\\
+P(y, $\delta$) = $|y - x| < \delta$\\
+Q(y, $\epsilon$) = $|f(y) - f(x)| < \epsilon$
+
+Statement:\\
+$(\forall \epsilon > 0) (\exists \delta > 0)(\forall y \in D_f)(P(y, \delta) \implies Q(y, \epsilon))$
+
+\item[1aii] Written by: Joshua Lilly\\
+Denial:
+$\neg ((\forall \epsilon > 0) (\exists \delta > 0)(\forall y \in D_f)(P(y, \delta) \implies Q(y, \epsilon))) \equiv$\\
+$(\exists \epsilon > 0)(\forall \delta > 0)(\exists y \in D_f) (P(y, \delta) \wedge \neg Q(y, \epsilon))$\\
+
+\item[1aiii] Written by: Joshua Lilly\\
+If there exist an epsilon greater than zero for every delta greater than zero then there exists a y in the domain of f such that $|y - x| < \delta$ and it is not the case that $|f(y) - f(x)| < \epsilon$\\
+
+\item[1bi] Written by: Joshua Lilly\\
+Open sentences:\\
+P(n, N) = n $\geq$ N\\
+Q(n, $\epsilon$) = $|X_n - L| < \epsilon$\\
+
+Statement:\\
+$(\forall \epsilon > 0)(\exists N \in \mathbb{N})(\forall n \in \mathbb{N}) (P(n, N) \implies Q(n, \epsilon))$
+
+\item[1bii] Written by: Joshua Lilly\\
+$\neg ((\forall \epsilon > 0)(\exists N \in \mathbb{N})(\forall n \in \mathbb{N}) (P(n, N) \implies Q(n, \epsilon))) \equiv$\\
+$(\exists \epsilon > 0)(\forall N \in \mathbb{N})(\exists n \in \mathbb{N}) (P(n, N) \wedge \neg Q(n, \epsilon))$ 
+
+\item[1biii] Written by: Joshua Lilly\\
+If there exists and epsilon greater than zero such that for every N in the set of natural numbers there exists an n in the set of natural numbers such that n is greater than or equal to N and then the $|x_n - L| < \epsilon$
+
+\item[2a] Written by: Joshua Lilly\\
+Using the open sentence P(x, y) = xy = 1\\
+For the first part: $(\forall x)(\exists y)(P(x, y)) $\\
+Let $x \in \mathbb{R}$ and let $x > 0 \exists$ $y = \frac{1}{x} : xy = 1$ which is always the case so the statement is true\\
+ However, it is possible to choose a y and an x in the statement $(\exists y)(\forall x) P(x, y)$ such that it is a false statement. For example, Let $y = 3$ and let $x = \frac{1}{4} xy = \frac{3}{4} \neq 1$ therefore the implication is going in this direction is false, meaning the equations must not be equivalent.
+ 
+ \item[2b] Written by: Joshua Lilly\\ 
+ The implication goes in the direction:
+ $(\exists y)(\forall x) P(x, y) \implies (\forall x)(\exists) P(x, y)$\\
+
+To see why this is the case, assume $(\exists y)(\forall x) P(x, y)$ is true this means that there exists some value c in the universe such that for every x in the universe P(x, c)is true. By this assumption that there exists some c for every x then for every x it must be possible to pick that same c to make the statement $(\forall x)(\exists y) P(x, c)$ is also true. Therefore $(\exists y)(\forall x) P(x, y) \implies (\forall x)(\exists) P(x, y)$ must be true.
+ 
+ 
+\end{enumerate}
+\end{flushleft}
+
+\end{document}
